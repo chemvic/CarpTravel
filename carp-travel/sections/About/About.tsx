@@ -6,7 +6,7 @@ const About: React.FC = () => {
         <div className='container'>
               <div className='grid-1'>
                 <div>
-                    <h2 className='uppercase text-[40px] font-thin tracking-[-4%] leading-[56px] text-left'>who <span className='font-medium'>we are</span></h2>
+                    <h2 className='text-[40px] font-thin uppercase leading-[1.4] tracking-[-1.6px] md:text-[67px] md:leading-normal md:tracking-[-2.68px] xl:text-[98px] xl:tracking-[-3.92px]  text-left'>who <span className='font-medium'>we are</span></h2>
                 </div>
                 <div className='max-w-[180px] md:max-w-[221px] xl:max-w-[292px] flexColumn gap-6'>
                     <p className=''><span>a team of enthusiasts</span>who are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere.</p>
