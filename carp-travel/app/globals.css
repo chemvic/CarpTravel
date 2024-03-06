@@ -8,9 +8,10 @@
   
   --background-color-global: rgb(11, 25, 23);
   --overlay-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
-  --header-overlay: linear-gradient(to bottom, rgba(0, 24, 38, 0.5) 0%,rgba(0, 37, 49, 0) 20%);
-  --header-overlay-tablet: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 55%);
-  --header-overlay-mobile: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 45%);
+  --add-overlay: linear-gradient(to bottom, rgba(0, 24, 38, 0.5) 0%,rgba(0, 37, 49, 0) 20%);
+  --add-overlay-darker: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 30%,rgba(0, 37, 49, 0) 70%,rgba(0, 36, 38, 0.5) 0%);
+  --add-overlay-tablet: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 55%);
+  --add-overlay-mobile: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 45%);
 }
 .body {
   font-family: "Inter", sans-serif;  
@@ -18,23 +19,27 @@
   width: 100%;
 }
 
-.background-overlay{
+.bg-overlay{
   background-color: var(--background-color-global);
 }
 .container{
   @apply mx-auto px-5 sm:w-[480px] md:w-[768px] md:px-8 xl:w-[1280px] xl:px-5;
 }
 .section {
-  @apply py-[56px] md:py-[64px] xl:py-[80px] background-overlay ;
+  @apply py-[56px] md:py-[64px] xl:py-[80px] bg-overlay;
 }
 .section-hero{
-  @apply  pb-[56px] pt-[105px] md:pb-[64px] md:pt-[121px] xl:pb-[80px] xl:pt-[106px]
+  @apply  pb-[56px] pt-[105px] md:pb-[64px] md:pt-[121px] xl:pb-[80px] xl:pt-[106px];
 }
+
+
+/* Hero*/
 .grid {
   display: grid;
   grid-template-columns: 1fr; 
   grid-template-rows: repeat(3, auto); 
 }
+
 .days {
   grid-column: 1; 
   grid-row: 1;   
@@ -48,6 +53,17 @@
   grid-column: 1; 
   grid-row: 3; 
 }
+
+/* About*/
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: repeat(4, auto); 
+}
+
+
+
 
   @media screen and (min-width: 768px) {
     .grid {
@@ -70,30 +86,10 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
-    .hero {
-      height: 763px;
-      /* max-width: 1140px; */
-      background-size:cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: var(--overlay-gradient),
-      var(--header-overlay),
-      url('/assets/images/backgrounds/desktop/hero.jpg');
-    }
-  }
+  /* Backgrounds */ 
 
-  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--overlay-gradient),
-    var(--header-overlay),
-      url('/assets/images/backgrounds/desktop/hero@2x.jpg');
 
-   
-  }
-}
+ 
  
     .hero {
       height: 642px;
@@ -101,21 +97,66 @@
       background-position: center;
       background-repeat: no-repeat;
       background-image: var(--overlay-gradient),
-      var(--header-overlay),
-      url('/assets/images/backgrounds/mobile/hero.jpg');
+      var(--add-overlay-mobile),
+      url('/assets/images/backgrounds/hero/mobile/hero.jpg');
+    }  
+    .about {
+      height: 873px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-mobile),
+      url('/assets/images/backgrounds/about/mobile/about.jpg');
     }  
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--overlay-gradient),
-    var(--header-overlay),
-      url('/assets/images/backgrounds/mobile/hero@2x.jpg');
-
-   
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay),
+      url('/assets/images/backgrounds/hero/mobile/hero@2x.jpg');   
   }
+  .about {
+      height: 873px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay),
+      url('/assets/images/backgrounds/about/mobile/about@2x.jpg');   
+  }
+
 }
+
+  @media screen and (min-width: 480px) {
+    .about {
+      height: 833px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-mobile),
+      url('/assets/images/backgrounds/about/mobile/about-wide.jpg');
+    }
+  }
+  @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .about {
+      height: 833px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-mobile),
+      url('/assets/images/backgrounds/about/mobile/about-wide@2x.jpg');   
+  }
+} 
 
   @media screen and (min-width: 768px) {
     .hero {
@@ -124,16 +165,78 @@
       background-position: center;
       background-repeat: no-repeat;
       background-image: var(--overlay-gradient),
-      var(--header-overlay),
-      url('/assets/images/backgrounds/tablet/hero.jpg');}
+      var(--add-overlay),
+      url('/assets/images/backgrounds/hero/tablet/hero.jpg');}
+    }
+    .about {
+      height: 697px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/about/tablet/about.jpg');
     }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
+    background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
     background-image: var(--overlay-gradient),
-    var(--header-overlay),
-      url('/assets/images/backgrounds/tablet/hero@2x.jpg');   
+    var(--add-overlay),
+      url('/assets/images/backgrounds/hero/tablet/hero@2x.jpg');   
+  }
+  .about {
+    background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    background-image: var(--overlay-gradient),
+    var(--add-overlay-darker),
+      url('/assets/images/backgrounds/about/tablet/about@2x.jpg');   
+  }
+} 
+
+@media screen and (min-width: 1280px) {
+    .hero {
+      height: 763px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay),
+      url('/assets/images/backgrounds/hero/desktop/hero.jpg');
+    }
+    .about {
+      height: 824px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/about/desktop/about.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    background-image: var(--overlay-gradient),
+    var(--add-overlay),
+      url('/assets/images/backgrounds/hero/desktop/hero@2x.jpg');   
+  }
+  .about {
+    background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    background-image: var(--overlay-gradient),
+    var(--add-overlay-darker),
+      url('/assets/images/backgrounds/about/desktop/about@2x.jpg');   
   }
 }

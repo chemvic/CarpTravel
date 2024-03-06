@@ -3,12 +3,11 @@ import { Link } from "react-scroll"
 
 const Hero = () => {
   return (
-    <section className='background-overlay section-hero hero'>
+    <section className='bg-overlay section-hero hero'>
         <div className="container flex flex-col items-center">
             <div className="grid">
                 <div className="flex flex-col days">
-                   <p className=" text-[98px] uppercase font-thin "><span className="tracking-normal font-medium">7</span>days</p>
-                   <p className=" text-8xl uppercase font-thin "><span className="tracking-normal font-medium">7</span>days</p>
+                   <p className="text-[98px] uppercase font-thin "><span className="tracking-normal font-medium">7</span>days</p>
                    <p className="uppercase font-light text-xs">JOURNEY</p> 
                 </div>
                 <div className="title">

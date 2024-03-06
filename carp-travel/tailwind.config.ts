@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import typography from '@tailwindcss/typography';
 
 const config: Config = {
   content: [
@@ -12,6 +13,7 @@ const config: Config = {
         inter: ['Inter', 'sans-serif'],
       },
       screens: {
+        'xs': "320px",
         'sm': '480px',  
         'md': '768px',
         'xl': '1280px',
@@ -19,6 +21,8 @@ const config: Config = {
      
     },
   },
-  plugins: [],
+  plugins: [
+    typography,
+  ],
 };
 export default config;
