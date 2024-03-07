@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="container flex flex-col items-center">
             <div className="grid">
                 <div className="flex flex-col days xl:mb-[165px]">
-                   <p className="text-[37px] font-thin uppercase  leading-none tracking-[1.665px] md:text-[67px] md:tracking-[8.71px] md:leading-normal  xl:text-[98px] xl:tracking-normal text-right  "><span className="text-[37px] font-medium leading-none md:text-[67px] md:leading-normal xl:text-[98px]">7</span>days</p>
+                   <p className="text-[37px] font-thin uppercase  leading-none tracking-[1.665px] md:text-[67px] md:tracking-[8.71px] md:leading-none  xl:text-[98px] xl:leading-[1.21] xl:tracking-normal text-right"><span className="font-medium">7</span>days</p>
                    <span className="text-[12px] font-light uppercase leading-none tracking-[9.48px] md:text-[14px] md:tracking-[25.9px] xl:text-[16px] xl:tracking-[36.48px] text-right">JOURNEY</span> 
                 </div>
                 <div className="title md:flex md:flex-col md:justify-between">
@@ -23,10 +23,10 @@ const Hero = () => {
                   </div> 
                   <Link
                       className='w-full hero-btn 
-                      relative h-[53px] flex items-center justify-center font-bold text-lg uppercase leading-[2.666] md:h-[50px] md:leading-normal xl:h-[71px] xl:text-[32px] bg-white/5 hover:bg-white/20 cursor-pointer'
+                      relative h-[53px] flex items-center justify-center font-bold text-lg uppercase leading-[2.666] md:h-[50px] md:leading-normal xl:h-[71px] xl:text-[32px] bg-white/5 hover:bg-white/20 transition-colors duration-300 ease-in-out cursor-pointer'
                       as='button'
                       type='button'
-                      to="about"
+                      to="contacts"
                       smooth={true}
                       duration={500}
                     >

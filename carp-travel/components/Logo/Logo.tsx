@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
   return (
     <Link
       href="/"
-      className="inline-flex flex-col items-center py-1 px-1 transition-colors duration-500 ease-in-out hover:bg-white/20"
+      className="inline-flex flex-col items-center py-1 px-1 transition-colors duration-300 ease-in-out hover:bg-white/20"
       aria-label="Link to homepage"
     >
       <Image

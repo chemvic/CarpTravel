@@ -8,8 +8,9 @@
   
   --background-color-global: rgb(11, 25, 23);
   --overlay-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+  --overlay-gradient-darker: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --add-overlay: linear-gradient(to bottom, rgba(0, 24, 38, 0.5) 0%,rgba(0, 37, 49, 0) 20%);
-  --add-overlay-darker: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 30%,rgba(0, 37, 49, 0) 70%,rgba(0, 36, 38, 0.5) 0%);
+  --add-overlay-darker: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 30%,rgba(0, 37, 49, 0) 70%,rgba(0, 24, 38, 0.75) 100%);
   --add-overlay-tablet: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 55%);
   --add-overlay-mobile: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 45%);
 }
@@ -225,13 +226,21 @@
     }  
     .about {
       height: 873px;
-      height: 100%;
       background-size:cover;
       background-position: center;
       background-repeat: no-repeat;
       background-image: var(--overlay-gradient),
       var(--add-overlay-mobile),
       url('/assets/images/backgrounds/about/mobile/about.jpg');
+    }  
+    .contacts {
+      height: 856px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/contacts/mobile/contacts.jpg');
     }  
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -245,8 +254,7 @@
       var(--add-overlay-mobile),
       url('/assets/images/backgrounds/hero/mobile/hero@2x.jpg');   
   }
-  .about {
-    height: 100%;
+  .about {   
       height: 873px;
       background-size:cover;
       background-position: center;
@@ -255,6 +263,15 @@
       var(--add-overlay),
       url('/assets/images/backgrounds/about/mobile/about@2x.jpg');   
   }
+  .contacts {
+    height: 856px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/contacts/mobile/contacts@2x.jpg');
+  }  
 
 }
 
@@ -277,7 +294,7 @@
       background-size:cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: var(--overlay-gradient),
+      background-image: var(--overlay-gradient-darker),
       var(--add-overlay-mobile),
       url('/assets/images/backgrounds/about/mobile/about-wide@2x.jpg');   
   }
@@ -291,8 +308,9 @@
       background-repeat: no-repeat;
       background-image: var(--overlay-gradient),
       var(--add-overlay),
-      url('/assets/images/backgrounds/hero/tablet/hero.jpg');}
+      url('/assets/images/backgrounds/hero/tablet/hero.jpg');
     }
+    
     .about {
       height: 697px;
       background-size:cover;
@@ -302,7 +320,17 @@
       var(--add-overlay-darker),
       url('/assets/images/backgrounds/about/tablet/about.jpg');
     }
+    .contacts {
+      height: 691px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/contacts/tablet/contacts.jpg');
+    }
 
+  }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -315,12 +343,22 @@
       url('/assets/images/backgrounds/hero/tablet/hero@2x.jpg');   
   }
   .about {
-    background-size:cover;
+      height: 697px;
+      background-size:cover;
       background-position: center;
       background-repeat: no-repeat;
-    background-image: var(--overlay-gradient),
-    var(--add-overlay-darker),
+      background-image: var(--overlay-gradient),
+      var(--add-overlay-darker),
       url('/assets/images/backgrounds/about/tablet/about@2x.jpg');   
+  }
+  .contacts {
+    height: 691px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/contacts/tablet/contacts@2x.jpg');
   }
 } 
 
@@ -343,6 +381,15 @@
       var(--add-overlay-darker),
       url('/assets/images/backgrounds/about/desktop/about.jpg');
     }
+    .contacts {
+      height: 762px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/contacts/desktop/contacts.jpg');
+    }
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
@@ -363,5 +410,14 @@
     background-image: var(--overlay-gradient),
     var(--add-overlay-darker),
       url('/assets/images/backgrounds/about/desktop/about@2x.jpg');   
+  }
+  .contacts {
+    height: 762px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/contacts/desktop/contacts@2x.jpg');
   }
 }

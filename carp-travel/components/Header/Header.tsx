@@ -9,7 +9,7 @@ export const Header = () => {
        <nav className='flex items-center justify-between py-9 md:py-6'>
         <Logo/>
         <div className="md:hidden">
-            <button type="button" className='mb:hidden tracking-[1.4px] text-sm uppercase transition-colors duration-500 ease-in-out hover:bg-white/20'>
+            <button type="button" className='mb:hidden tracking-[1.4px] text-sm uppercase transition-colors duration-300 ease-in-out hover:bg-white/20'>
                 MENU
             </button>
         </div>
