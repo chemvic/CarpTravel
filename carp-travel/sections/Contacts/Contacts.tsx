@@ -41,7 +41,7 @@ const Contacts = () => {
                         <ul className=" min-w-[81px] text-left md:w-[220px]">
                             <li className="xl:flex xl:justify-end">
                                 <a 
-                                    className='relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
+                                    className='social relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
                                     href="/"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -52,7 +52,7 @@ const Contacts = () => {
                             </li>
                             <li className="xl:flex xl:justify-end">
                                 <a 
-                                    className='relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
+                                    className='social relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
                                     href="/"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -62,7 +62,7 @@ const Contacts = () => {
                             </li>
                             <li className="xl:flex xl:justify-end">
                                 <a 
-                                    className='relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
+                                    className='social relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
                                     href="/"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
@@ -73,7 +73,7 @@ const Contacts = () => {
                             </li>
                             <li className="xl:flex xl:justify-end">
                                 <a 
-                                    className='relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
+                                    className='social relative text-[14px] leading-[1.714] align-top md:text-[16px] md:leading-[1.5] xl:text-[18px] xl:leading-[1.333]'
                                     href="/"
                                     target="_blank"
                                     rel="nofollow noreferrer noopener"
