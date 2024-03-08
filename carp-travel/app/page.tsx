@@ -4,6 +4,7 @@ import "./globals.css";
 import About from "@/sections/About/About";
 import Contacts from "@/sections/Contacts/Contacts";
 import Hero from "@/sections/Hero/Hero";
+import Career from '@/sections/Career/Career';
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="">
         <Hero/>
         <About/>
+        <Career/>
         <Contacts/>
         <ToastContainer autoClose={1000}/>
 

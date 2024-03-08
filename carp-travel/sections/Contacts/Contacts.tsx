@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm/ContactForm"
 const Contacts = () => {
   return (
     <section  id="contacts"
-    className="section background-overlay contacts">
+    className="section contacts">
         <div className="container flex flex-col">
             <h2 className="uppercase mb-[36px] text-[40px] font-thin leading-[1.4] tracking-[-1.6px] md:text-justify md:text-[67px] md:leading-[0.985] md:tracking-[-2.68px] xl:text-[98px] xl:leading-[1.21] xl:tracking-[-3.92px] xl:mb-[71px] ">contact <span className="font-medium">us</span></h2>                            
             <div className="flex flex-col xl:flex-row justify-between xl:gap-[230px]">            
