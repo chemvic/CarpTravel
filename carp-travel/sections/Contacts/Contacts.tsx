@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm/ContactForm"
 
 const Contacts = () => {
   return (
@@ -84,8 +85,8 @@ const Contacts = () => {
                         
                     </div>
                 </address>
-            
-                <div className="xl:w-[607px] xl:h-[361px] xl:bg-slate-400">Form</div>
+            <ContactForm/>
+                {/* <div className="xl:w-[607px] xl:h-[361px] xl:bg-slate-400">Form</div> */}
             </div>
         </div>
     </section>

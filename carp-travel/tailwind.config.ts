@@ -13,7 +13,7 @@ const config: Config = {
         inter: ['Inter', 'sans-serif'],
       },
       screens: {
-        'xs': "320px",
+        'xs': "360px",
         'sm': '480px',  
         'md': '768px',
         'xl': '1280px',
