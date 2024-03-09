@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
       aria-label="Link to homepage"
     >
       <Image
-        src="/assets/images/Logo.svg"
+        src="/assets/icons/Logo.svg"
         width={59}
         height={21}
         alt="Logo of the company"
