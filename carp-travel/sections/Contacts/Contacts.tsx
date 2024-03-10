@@ -86,7 +86,6 @@ const Contacts = () => {
                     </div>
                 </address>
             <ContactForm/>
-                {/* <div className="xl:w-[607px] xl:h-[361px] xl:bg-slate-400">Form</div> */}
             </div>
         </div>
     </section>

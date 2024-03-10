@@ -1,9 +1,11 @@
+import CareerForm from "@/components/CareerForm/CareerForm"
 
 
 const Career = () => {
   return (
-    <section  id="career"
-    className="section career">
+    <section  id="career">
+      <div className="section career">     
+      
         <div className="container flex flex-col gap-[36px] md:gap-[12px] xl:gap-[24px] ">
             <div className="flex flex-col gap-[24px] md:flex-row justify-between">
                 <h2 className="uppercase text-[40px] font-thin leading-[1.4] tracking-[-1.6px] md:text-justify md:text-[67px] md:leading-[0.985] md:tracking-[-2.68px] xl:text-[98px] xl:leading-[1.21] xl:tracking-[-3.92px]">choose <span className="font-medium">us</span></h2>
@@ -30,12 +32,28 @@ const Career = () => {
                             <p className="text-[12px] font-extralight leading-[1.667]  xl:leading-[2] xl:w-[285px] xl:text-left ">Unleash your potential through unforgettable projects showcasing Carpathian beauty.</p>
                         </li>
                     </ul>
-
-
                 </div>
-                <div className="hidden bg-gray-200 md:flex md:w-[463px] md:h-[543px] xl:w-[608px] xl:h-[466px] "></div>
+
+                <div className="hidden md:flex md:flex-col md:pt-[102px] md:gap-[32px] md:w-[463px] xl:pt-0 xl:gap-[14px] xl:w-[608px] ">
+                    <p className="text-[14px] font-extralight leading-[1.428]  md:text-[16px] md:leading-[1.25] xl:text-[18px] xl:leading-[1.333] w-[179px] self-end md:self-start md:w-[210px] xl:w-[234px]">Don&apos;t miss your opportunity! Fill out the form right now and join our team!</p>
+                   <CareerForm/>
+                </div>
+
             </div>
         </div>
+     </div>
+
+     <div className="section career md:hidden">
+        <div className="container">
+                <div className="flex  flex-col gap-[24px]  ">
+                    <p className="text-[14px] font-extralight leading-[1.428]  md:text-[16px] md:leading-[1.25] xl:text-[18px] xl:leading-[1.333] w-[179px] self-end md:self-start md:w-[210px] xl:w-[234px]">Don&apos;t miss your opportunity! Fill out the form right now and join our team!</p>
+                   <CareerForm/>
+                </div>
+
+        </div>
+     </div>
+
+
     </section>
   )
 }
