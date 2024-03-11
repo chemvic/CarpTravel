@@ -1,17 +1,12 @@
 'use client';
-
-import { useRef } from 'react';
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
-import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 
 const GallerySlider:React.FC = () => {
-    const sliderRef = useRef<any>(null);
-    console.log('SLIDER_REF:  ', sliderRef);
     
   return (
     <div className="hidden relative md:block  mx-auto md:px-[32px] xl:px-[0] md:w-[768px] xl:w-[1280px] ">
@@ -28,10 +23,6 @@ const GallerySlider:React.FC = () => {
                    autoplay={{
                     delay: 10000,
                     disableOnInteraction: false,
-                  }}
-                ref={sliderRef}
-                onInit={(core: SwiperCore) => {
-                    sliderRef.current = core.el;
                   }}
                 slidesPerView={3}
                 spaceBetween={24}
@@ -116,8 +107,8 @@ const GallerySlider:React.FC = () => {
                 </SwiperSlide>
 
             </Swiper>
-            <button type='button'  className='button-prev block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:left-[70px] xl:left-[208px] xl:leading-none bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>back</button>
-            <button type='button'  className='button-next block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:right-[70px] xl:right-[248px] xl:leading-none bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>next</button>
+            <button type='button'  className='button-prev block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:left-[70px] xl:left-[208px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>back</button>
+            <button type='button'  className='button-next block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:right-[70px] xl:right-[248px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>next</button>
 
 
 
