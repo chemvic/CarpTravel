@@ -10,7 +10,7 @@ const NavLink: React.FC<NavLinkProps> = ({link , text, closeMenu}) => {
   return (
     <div >
     <Link
-                   className='md:ml-6 xl:ml-14 cursor-pointer transition-colors duration-500 ease-in-out hover:bg-white/20 capitalize tracking-[1.4px] font-inter text-white text-lg md:text-sm'
+                   className=' cursor-pointer transition-colors duration-500 ease-in-out hover:bg-white/20 capitalize tracking-[1.4px] font-inter text-white text-[18px] md:text-[14px]'
                    to={link}
                    onClick={closeMenu}
                    smooth={true}

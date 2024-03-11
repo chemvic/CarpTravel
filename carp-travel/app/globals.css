@@ -8,6 +8,7 @@
   
   --background-color-global: rgb(11, 25, 23);
   --overlay-gradient: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
+  --overlay-menu-gradient: linear-gradient(rgba(1, 10, 5, 0.75), rgba(1, 10, 5, 0.75));
   --overlay-gradient-darker: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
   --add-overlay: linear-gradient(to bottom, rgba(0, 24, 38, 0.5) 0%,rgba(0, 37, 49, 0) 20%);
   --add-overlay-darker: linear-gradient(to bottom, rgba(0, 24, 38, 0.75) 0%,rgba(0, 37, 49, 0) 30%,rgba(0, 37, 49, 0) 70%,rgba(0, 24, 38, 0.75) 100%);
@@ -22,6 +23,9 @@
 
 .bg-overlay{
   background-color: var(--background-color-global);
+}
+.bg-overlay-menu {
+  background-color: var(--overlay-menu-gradient);
 }
 .container{
   @apply mx-auto xs:w-full px-[20px] sm:w-[480px] md:w-[768px] md:px-[32px] xl:w-[1280px] xl:px-[20];
