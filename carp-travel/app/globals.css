@@ -302,6 +302,15 @@
       var(--add-overlay-darker),
       url('/assets/images/backgrounds/career/mobile/career.jpg');
     }
+    .gallery {
+      height: 801px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/gallery/mobile/gallery.jpg');
+    }
       
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -341,6 +350,15 @@
     background-image: var(--overlay-gradient-darker),
     var(--add-overlay-darker),
     url('/assets/images/backgrounds/career/mobile/career@2x.jpg');
+  }
+  .gallery {
+    height: 801px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/gallery/mobile/gallery@2x.jpg');
   } 
 
 }
@@ -427,6 +445,15 @@
       var(--add-overlay-darker),
       url('/assets/images/backgrounds/career/tablet/career.jpg');
     } 
+    .gallery {
+      height: 575px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/gallery/tablet/gallery.jpg');
+    }
 
   }
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -466,6 +493,15 @@
     background-image: var(--overlay-gradient-darker),
     var(--add-overlay-darker),
     url('/assets/images/backgrounds/career/tablet/career@2x.jpg');
+  }
+  .gallery {
+    height: 575px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/gallery/tablet/gallery@2x.jpg');
   } 
 } 
 
@@ -505,6 +541,15 @@
       background-image: var(--overlay-gradient-darker),
       url('/assets/images/backgrounds/career/desktop/career.jpg');
     } 
+    .gallery {
+      height: 788px;
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: var(--overlay-gradient-darker),
+      var(--add-overlay-darker),
+      url('/assets/images/backgrounds/gallery/desktop/gallery.jpg');
+    } 
   }
 
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
@@ -542,5 +587,14 @@
     background-repeat: no-repeat;
     background-image: var(--overlay-gradient-darker),
     url('/assets/images/backgrounds/career/desktop/career@2x.jpg');
+  } 
+  .gallery {
+    height: 788px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--overlay-gradient-darker),
+    var(--add-overlay-darker),
+    url('/assets/images/backgrounds/gallery/desktop/gallery@2x.jpg');
   } 
 }

@@ -5,6 +5,7 @@ import About from "@/sections/About/About";
 import Contacts from "@/sections/Contacts/Contacts";
 import Hero from "@/sections/Hero/Hero";
 import Career from '@/sections/Career/Career';
+import Gallery from '@/sections/Gallery/Gallery';
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero/>
         <About/>
         <Career/>
+        <Gallery/>
         <Contacts/>
         <ToastContainer autoClose={1000}/>
 

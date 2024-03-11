@@ -35,14 +35,14 @@ const CareerForm:React.FC = () => {
                 <label className={`label-form  ${errors.fullName ? 'text-red-500' : 'text-white'} xl:mb-[4px] `}>Full name</label>
                 <input type="text" {...register('fullName', {required:'Full name is required', pattern: {value:/^[а-яА-Яa-zA-Z\s]*$/, message: 'Incorrect name'}, minLength:{value: 2, message:'Min length is 2 letters'}, maxLength:{value: 31, message:'Max length is 30 letters'}  })} placeholder="John Smith"
                  className={`input-form input-form-text ${errors.fullName ? 'text-red-500' : 'text-white'} md:w-[221px]  xl:w-[293px]`}/>
-                {errors.fullName && <p className="error-message label-form  absolute right-0 bottom-0 md:bottom-[5px] xl:bottom-[-24px] text-red-500 ">{errors.fullName?.message}</p>} 
+                {errors.fullName && <p className="error-message label-form  absolute right-0 bottom-[-24px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500 ">{errors.fullName?.message}</p>} 
               </div>
                 
               <div className="relative">
                 <label className={`label-form xl:mb-[4px] ${errors.email ? 'text-red-500' : 'text-white'}  `}>E-mail</label>
                 <input type="email" {...register('email', {required:"E-mail field is required", pattern: {value:/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, message:'Invalid email'} })} placeholder="support@carptravel.com"
                  className={`input-form input-form-text ${errors.email ? 'text-red-500' : 'text-white'} md:w-[221px] xl:w-[293px]`} /> 
-                {errors.email && <p className="error-message label-form  absolute right-0 bottom-0 md:bottom-[5px] xl:bottom-[-24px] text-red-500">{errors.email?.message}</p>}
+                {errors.email && <p className="error-message label-form  absolute right-0 bottom-[-24px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500">{errors.email?.message}</p>}
               </div>
 
               <div>
@@ -69,7 +69,7 @@ const CareerForm:React.FC = () => {
           />
         </span>
 
-                {errors.phone && <p className="error-message label-form  absolute right-0 bottom-0 md:bottom-[5px] xl:bottom-[-24px] text-red-500">{errors.phone?.message}</p>}
+                {errors.phone && <p className="error-message label-form  absolute right-0 bottom-[-24px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500">{errors.phone?.message}</p>}
           </label>    </div>
 
 
@@ -82,7 +82,7 @@ const CareerForm:React.FC = () => {
         maskPlaceholder="(___) __ __ ___"
         type="tel" {...register('phone', {required:"Phone field is required", pattern: {value:/^\(\d{3}\) \d{2} \d{2} \d{3}$/, message:'Incorrect phone'} })} placeholder="         (097) 12 34 567"
           className={` input-form input-form-text ${errors.phone ? 'text-red-500' : 'text-white'} md:w-[221px] xl:w-[293px]`} /> 
-                {errors.phone && <p className="error-message label-form  absolute right-0 bottom-0 md:bottom-[5px] xl:bottom-[-24px] text-red-500">{errors.phone?.message}</p>}
+                {errors.phone && <p className="error-message label-form  absolute right-0 bottom-[-24px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500">{errors.phone?.message}</p>}
               </div> */}
             </div>
             
@@ -91,16 +91,16 @@ const CareerForm:React.FC = () => {
                 <textarea  {...register('formText')} className="input-form-text bg-white/5 h-[193px] w-full px-[8px]  resize-none md:h-[228px] md:w-[221px] xl:h-[268px]  xl:w-[292px]"/>               
             </div> 
           </div>
-          <div className="flex flex-col md:flex-row md:justify-between">
-            <div className="flex w-full gap-[8px] md:w-[222px] xl:w-[290px]  justify-between relative">
+          <div className="flex flex-col gap-[16px] md:flex-row md:justify-between">
+            <div className=" flex w-[250px] gap-[8px] md:w-[222px] xl:w-[290px]  justify-between relative">
                 <input type="checkbox" {...register('isConfirmed', {required:"You should confirm"})} />
                 {/* className='confirmation-checkbox absolute h-0 w-0 opacity-0'  */}
 
                 {/* <span
             className={`checkmark transition_prop relative inline-block h-[22px] w-[22px] shrink-0 cursor-pointer border hover:border-white/75 xl:h-[24px] xl:w-[24px]`}
           ></span> */}
-                <p className="text-[12px] leading-[1.83] font-extralight  ">I confirm my consent to the processing of personal data.</p> 
-                {errors.isConfirmed && <p className="error-message label-form  absolute right-0 bottom-0 md:bottom-[5px] xl:bottom-[-24px] text-red-500">{errors.isConfirmed?.message}</p>}
+                <p className="text-[12px] leading-[1.83] font-extralight ">I confirm my consent to the processing of personal data.</p> 
+                {errors.isConfirmed && <p className="error-message label-form  absolute right-0 bottom-[-20px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500">{errors.isConfirmed?.message}</p>}
             </div>
 
             <button className='text-[30px] font-medium uppercase  self-end transition-colors duration-300 ease-in-out hover:bg-white/20' type='submit' >
