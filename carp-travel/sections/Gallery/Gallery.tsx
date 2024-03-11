@@ -1,3 +1,4 @@
+import GallerySlider from '@/components/GallerySlider/GallerySlider'
 import Image from 'next/image'
 
 const Gallery:React.FC = () => {
@@ -35,7 +36,7 @@ const Gallery:React.FC = () => {
             />
         </div>
 
-        
+        <GallerySlider/>
 
 
         </div>

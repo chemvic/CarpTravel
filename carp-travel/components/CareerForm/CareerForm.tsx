@@ -61,7 +61,7 @@ const CareerForm:React.FC = () => {
           <InputMask
             mask={'(999) 99 99 999'}
             alwaysShowMask={false}
-            maskPlaceholder={''}
+            // maskPlaceholder={''}
             {...register('phone', {required: "Phone field is required", pattern: {value:/^\(\d{3}\) \d{2} \d{2} \d{3}$/, message:'Incorrect phone'} })}
            
             placeholder="(097) 12 34 567"
