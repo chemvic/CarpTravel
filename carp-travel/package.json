@@ -1,7 +1,7 @@
 {
   "name": "carp-travel",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://chemvic.github.io/CarpTravel/carp-travel",
   "private": true,
   "scripts": {
     "dev": "next dev",
