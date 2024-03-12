@@ -6,6 +6,7 @@ import Contacts from "@/sections/Contacts/Contacts";
 import Hero from "@/sections/Hero/Hero";
 import Career from '@/sections/Career/Career';
 import Gallery from '@/sections/Gallery/Gallery';
+import Services from '@/sections/Services/Services';
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="">
         <Hero/>
         <About/>
+        <Services/>
         <Career/>
         <Gallery/>
         <Contacts/>

@@ -1,8 +1,60 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import ServiceSlide from '@/components/ServiceSlide/ServiceSlide';
+import services from '../../data/services.json';
+
+
+
 
 const Services = () => {
+
+
   return (
-    <div className='h-[800px] pt-10 text-center section text-2xl uppercase m-w-[250px] bg-blue-200 p-10'>Services</div>
+    <section id='services' className='relative   bg-overlay'>
+       <Swiper
+        // spaceBetween={30}
+        effect={'fade'}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
+        modules={[ Autoplay, EffectFade, Pagination]}
+      >
+        {services.map(({num, title, img, slogan, description}
+) => (
+          <SwiperSlide  key={img}>
+            <ServiceSlide num={num} title={title} img={img} slogan={slogan} description={description} />
+          </SwiperSlide>
+
+        ))}
+
+        {/* <SwiperSlide>
+          <ServiceSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlide/>
+        </SwiperSlide> */}
+       
+      </Swiper>
+    </section>
   )
 }
 

@@ -26,11 +26,11 @@ export const Header = () => {
        <div className='container'>
        <nav className='flex items-center justify-between py-9 md:py-6'>
         <Logo/>
-        <div className="md:hidden z-40 ">
-            <button type="button" onClick={toggle}  aria-label='turn menu' className='md:hidden tracking-[1.4px] text-[14px] uppercase transition-colors duration-300 ease-in-out hover:bg-white/20 focus:bg-white/20'>
+        {/* <div className="md:hidden relative z-40 "> */}
+            <button type="button" onClick={toggle}  aria-label='turn menu' className='relative z-40 md:hidden tracking-[1.4px] text-[14px] uppercase transition-colors duration-300 ease-in-out hover:bg-white/20 focus:bg-white/20'>
                {!isOpen ? 'MENU' : 'CLOSE'} 
             </button>
-        </div>
+        {/* </div> */}
        
         <div className='hidden md:block'>
             <PageNav/> 
