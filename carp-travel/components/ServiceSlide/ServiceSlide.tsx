@@ -33,7 +33,7 @@ const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, description, slog
                 />
                 <div className="flex flex-col justify-between">
                     <div className="flex flex-col gap-[24px] md:flex-col-reverse md:gap-[25px] xl:flex-row-reverse ">
-                        <p className="label-form text-left xl:w-[293px]">{slogan}</p>
+                        <p className="block label-form text-right md:text-left xl:w-[293px]">{slogan}</p>
                         <ul className="flex flex-col gap-[16px] xl:gap-[24px] xl:w-[244px]">
                             <li>
                                 <button type='button' className='relative rhombus-sign pl-[8px] text-[20px] font-medium uppercase leading-[0.85]  md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>ATVs Traveling</button>
