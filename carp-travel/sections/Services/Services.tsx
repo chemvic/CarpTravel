@@ -18,7 +18,6 @@ const Services = () => {
   return (
     <section id='services' className='relative   bg-overlay'>
        <Swiper
-        // spaceBetween={30}
         effect={'fade'}
         pagination={{
           clickable: true,
@@ -36,23 +35,7 @@ const Services = () => {
           </SwiperSlide>
 
         ))}
-
-        {/* <SwiperSlide>
-          <ServiceSlide/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServiceSlide/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServiceSlide/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServiceSlide/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServiceSlide/>
-        </SwiperSlide> */}
-       
+      
       </Swiper>
     </section>
   )

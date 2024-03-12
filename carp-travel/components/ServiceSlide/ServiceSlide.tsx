@@ -35,11 +35,21 @@ const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, description, slog
                     <div className="flex flex-col gap-[24px] md:flex-col-reverse md:gap-[25px] xl:flex-row-reverse ">
                         <p className="label-form text-left xl:w-[293px]">{slogan}</p>
                         <ul className="flex flex-col gap-[16px] xl:gap-[24px] xl:w-[244px]">
-                            <li className='relative rhombus-sign pl-[8px] text-[20px] font-medium uppercase leading-[0.85]  md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>ATVs Traveling</li>
-                            <li className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Rock climbing</li>
-                            <li className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Hot air ballooning</li>
-                            <li className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Skydiving</li>
-                            <li className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Rafting</li>
+                            <li>
+                                <button type='button' className='relative rhombus-sign pl-[8px] text-[20px] font-medium uppercase leading-[0.85]  md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>ATVs Traveling</button>
+                            </li>
+                            <li >
+                            <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Rock climbing</button>
+                            </li>
+                            <li >
+                            <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Hot air<br/>ballooning</button> 
+                            </li>
+                            <li >
+                            <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Skydiving</button>  
+                            </li>
+                            <li >
+                            <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Rafting</button>  
+                            </li>
                         </ul>
                     </div>
                     <p className="block text-[14px] font-extralight leading-[1.428]  md:text-[13px] md:leading-[1.538] md: text-justify xl:text-[18px] xl:leading-[1.333] xl:w-[293px]  xl:self-end">{description}</p>
