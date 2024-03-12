@@ -42,7 +42,7 @@ const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, description, slog
                             <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Rock climbing</button>
                             </li>
                             <li >
-                            <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Hot air<br/>ballooning</button> 
+                            <button type='button' className=' block text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '><span className='text-left'>Hot air</span><br/>ballooning</button> 
                             </li>
                             <li >
                             <button type='button' className='text-[20px] font-extralight uppercase leading-[0.85] opacity-[0.5] hover:opacity-[1] focus:opacity-[1] md:text-[22px] md:leading-[0.82] xl:text-[28px] xl:leading-[0.857] '>Skydiving</button>  
