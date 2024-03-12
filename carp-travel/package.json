@@ -1,9 +1,11 @@
 {
   "name": "carp-travel",
   "version": "0.1.0",
-  "homepage": "https://chemvic.github.io/CarpTravel/carp-travel",
+  "homepage": "https://chemvic.github.io/CarpTravel/carp-travel/",
   "private": true,
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d biild",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
