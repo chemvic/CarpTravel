@@ -11,7 +11,7 @@ const Hero = () => {
                    <span className="text-[12px] font-light uppercase leading-none tracking-[9.48px] md:text-[14px] md:tracking-[25.9px] xl:text-[16px] xl:tracking-[36.48px] text-right">JOURNEY</span> 
                 </div>
                 <div className="title md:flex md:flex-col md:justify-between">
-                    <p className="text-[40px] mb-6 font-thin text-left leading-none md:text-[67px] md:tracking-[-2.68px] md:leading-normal xl:text-[98px] xl:tracking-[-3.92px] uppercase"><span className="font-medium">uncover</span><br/>carpathian’s secrets</p>
+                    <h1 className="text-[40px] mb-6 font-thin text-left leading-none md:text-[67px] md:tracking-[-2.68px] md:leading-normal xl:text-[98px] xl:tracking-[-3.92px] uppercase"><span className="font-medium">uncover</span><br/>carpathian’s secrets</h1>
                     <div className="flex flex-col xl:flex-row">
                       <p className="text-[10px] font-extralight leading-[1.6] md:text-[14px] md:leading-[1.143] md:tracking-[1.26px] xl:text-[16px] xl:leading-[1.5] xl:tracking-[1.44px]">Hoverla / Yaremche / Zakarpattia / </p>
                       <p className="text-[10px] font-extralight leading-[1.6] md:text-[14px] md:leading-[1.143] md:tracking-[1.26px] xl:text-[16px] xl:leading-[1.5] xl:tracking-[1.44px]">Vorokhta / Synevyr Lake / Bukovel</p>
