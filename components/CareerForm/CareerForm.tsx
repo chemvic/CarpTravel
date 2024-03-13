@@ -61,7 +61,6 @@ const CareerForm:React.FC = () => {
           <InputMask
             mask={'(999) 99 99 999'}
             alwaysShowMask={false}
-            // maskPlaceholder={''}
             {...register('phone', {required: "Phone field is required", pattern: {value:/^\(\d{3}\) \d{2} \d{2} \d{3}$/, message:'Incorrect phone'} })}
            
             placeholder="(097) 12 34 567"
@@ -92,16 +91,27 @@ const CareerForm:React.FC = () => {
             </div> 
           </div>
           <div className="flex flex-col gap-[16px] md:flex-row md:justify-between">
-            <div className=" flex w-[250px] gap-[8px] md:w-[222px] xl:w-[290px]  justify-between relative">
-                <input type="checkbox" {...register('isConfirmed', {required:"You should confirm"})} />
-                {/* className='confirmation-checkbox absolute h-0 w-0 opacity-0'  */}
-
-                {/* <span
-            className={`checkmark transition_prop relative inline-block h-[22px] w-[22px] shrink-0 cursor-pointer border hover:border-white/75 xl:h-[24px] xl:w-[24px]`}
-          ></span> */}
-                <p className="text-[12px] leading-[1.83] font-extralight ">I confirm my consent to the processing of personal data.</p> 
-                {errors.isConfirmed && <p className="error-message label-form  absolute right-0 bottom-[-20px] md:bottom-[-24px] xl:bottom-[-24px] text-red-500">{errors.isConfirmed?.message}</p>}
-            </div>
+           
+             <label className="flex gap-[8px] text-[12px] font-extralight leading-[1.833] md:w-[222px] xl:w-[290px] xl:leading-[2.0]">
+          <input
+            {...register('isConfirmed', {
+              required: true,
+            })}
+            type="checkbox"
+            className="confirmation-checkbox absolute h-0 w-0 opacity-0"
+          />
+          <span
+            className={`checkmark transition duration-300 ease-in-out relative inline-block h-[22px] w-[22px] shrink-0 cursor-pointer border hover:border-white/75 xl:h-[24px] xl:w-[24px]`}
+          ></span>
+          <p className='relative'>
+          I confirm my consent to the processing of personal data.
+          {errors.isConfirmed && (
+              <span className="error-message label-form  absolute right-0 bottom-[-20px] md:bottom-[-24px] xl:bottom-[0px] text-red-500">
+               You should confirm
+              </span>
+            )}
+          </p>
+        </label>
 
             <button className='text-[30px] font-medium uppercase  self-end transition-colors duration-300 ease-in-out hover:bg-white/20' type='submit' >
                 Send            

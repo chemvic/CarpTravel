@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
   return (
     <Link
       href="/"
-      className="social relative inline-flex flex-col items-center py-1 px-1 "
+      className="social relative inline-flex flex-col items-center "
       aria-label="Link to homepage"
     >
       <Image

@@ -863,16 +863,16 @@
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero {
     background-size:cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: var(--overlay-gradient),
     var(--add-overlay),
       url('/assets/images/backgrounds/hero/desktop/hero@2x.jpg');   
   }
   .about {
     background-size:cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: var(--overlay-gradient),
     var(--add-overlay-darker),
       url('/assets/images/backgrounds/about/desktop/about@2x.jpg');   
