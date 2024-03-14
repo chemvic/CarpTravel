@@ -829,7 +829,7 @@
       var(--add-overlay-lighter),
       url('/assets/images/backgrounds/services/desktop/service-02-bg.jpg');
     } 
-    .service-ballon {
+    .service-balloon {
       height: 779px;
       background-size:cover;
       background-position: center;
@@ -920,7 +920,7 @@
     var(--add-overlay-lighter),
     url('/assets/images/backgrounds/services/desktop/service-02-bg@2x.jpg');
   } 
-  .service-ballon {
+  .service-balloon {
     height: 779px;
     background-size:cover;
     background-position: center;
