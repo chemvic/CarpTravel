@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://carp-travel-beryl.vercel.app/'),
   icons: [
     {
-      url: '/public/assets/icons/favicon-dark.ico',
+      url: '/icons/favicon-dark.svg',
       media: '(prefers-color-scheme: light)',
       rel: 'icon',
-      type: 'image/x-icon',
+      type: 'image/svg',
     },
     {
-      url: '/public/assets/icons/favicon-light.ico',
+      url: '/icons/favicon-light.svg',
       media: '(prefers-color-scheme: dark)',
       rel: 'icon',
-      type: 'image/x-icon',
+      type: 'image/svg',
     },
   ],
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'CarpTravel',
     description: 'Service for organizing travel in the Carpathians',
     siteName: 'Uncover Carpathian’s Secrets',
-    images: [{ url: '/public/assets/ogp/carpatians.jpg' }, { url: '/public/assets/ogp/carpatians.png' }],
+    images: [{ url: '/ogp/carpatians.jpg' }, { url: '/ogp/carpatians.png' }],
   },
 
 };
