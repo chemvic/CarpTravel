@@ -37,6 +37,7 @@ const GallerySlider:React.FC = () => {
             src='/assets/images/images/gallery/lake@2x.jpg'
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/lake.jpg'
+            priority={true}
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
 
             />
@@ -50,6 +51,7 @@ const GallerySlider:React.FC = () => {
             src='/assets/images/images/gallery/river@2x.jpg'
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/river.jpg'
+            priority={true}
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
 
             />
@@ -63,6 +65,7 @@ const GallerySlider:React.FC = () => {
             src='/assets/images/images/gallery/mountain@2x.jpg'
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/mountain.jpg'
+            priority={true}
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
 
             />
@@ -76,6 +79,8 @@ const GallerySlider:React.FC = () => {
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/lake.jpg'
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
+            priority={true}
+
 
             />
                 </SwiperSlide>
@@ -89,6 +94,7 @@ const GallerySlider:React.FC = () => {
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/river.jpg'
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
+            priority={true}
 
             />
                 </SwiperSlide>
@@ -102,13 +108,14 @@ const GallerySlider:React.FC = () => {
             placeholder="blur"
             blurDataURL='/assets/images/images/gallery/mountain.jpg'
             sizes="(min-width: 1200px) 606px, (min-width: 768px) 415px, 100vw"
+            priority={true}
 
             />
                 </SwiperSlide>
 
             </Swiper>
-            <button type='button'  className='button-prev block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:left-[70px] xl:left-[208px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>back</button>
-            <button type='button'  className='button-next block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:right-[70px] xl:right-[248px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>next</button>
+            <button type='button'  className='button-prev block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:left-[70px] xl:left-[200px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>back</button>
+            <button type='button'  className='button-next block py-[7px] text-[33px]  font-thin uppercase  absolute z-10  md:right-[70px] xl:right-[260px] xl:leading-none md:bottom-[17px] xl:bottom-0  transition-colors duration-300 ease-in-out hover:bg-white/20  focus:bg-white/20'>next</button>
 
 
 

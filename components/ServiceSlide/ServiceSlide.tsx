@@ -29,6 +29,7 @@ const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, description, slog
                     src={`/assets/images/images/services/service-0${num}-${img}@2x.jpg`}
                     placeholder="blur"
                     blurDataURL={`/assets/images/images/services/service-0${num}-${img}.jpg`}
+                    priority={true}
                     sizes="(min-width: 1280px) 607px, (min-width: 768px) 463px, (min-width: 360px) 280px,  100vw"
                 />
                 <div className="flex flex-col justify-between">

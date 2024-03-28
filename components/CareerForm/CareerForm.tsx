@@ -30,7 +30,7 @@ const CareerForm:React.FC = () => {
     <div>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-[16px] xl:gap-[36px] ">
           <div className="flex flex-col gap-[16px] md:flex-row md:gap-[20px] xl:gap-[24px]">            
-            <div className="flex flex-col gap-[16px] xl:gap-[24px] md:w-[221px]  xl:w-[293px] ">
+            <div className="flex flex-col gap-[16px] xl:gap-[24px] md:w-[221px]  xl:w-[283px] ">
               <div className="relative">
                 <label className={`label-form  ${errors.fullName ? 'text-red-500' : 'text-white'} xl:mb-[4px] `}>Full name</label>
                 <input type="text" {...register('fullName', {required:'Full name is required', pattern: {value:/^[а-яА-Яa-zA-Z\s]*$/, message: 'Incorrect name'}, minLength:{value: 2, message:'Min length is 2 letters'}, maxLength:{value: 31, message:'Max length is 30 letters'}  })} placeholder="John Smith"
@@ -107,7 +107,7 @@ const CareerForm:React.FC = () => {
           I confirm my consent to the processing of personal data.
           {errors.isConfirmed && (
               <span className="error-message label-form  absolute right-0 bottom-[-20px] md:bottom-[-24px] xl:bottom-[0px] text-red-500">
-               You should confirm
+              You should confirm
               </span>
             )}
           </p>

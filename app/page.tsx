@@ -12,7 +12,7 @@ import Services from '@/sections/Services/Services';
 export default function Home() {
   return (
     <main >
-      <div className="overflow-hidden">
+      <div className="overflow-hidden ">
         <Hero/>
         <About/>
         <Services/>
