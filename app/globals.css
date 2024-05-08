@@ -71,15 +71,21 @@
 .social:focus::after {
   opacity: 1;
 }
-.rhombus-sign::before {
-  position: absolute;
+.rhombus::before {
+  position:absolute;
   contain: '';
-  width: 6px;
+  /* width: 6px;
   height: 6px;
-  left: -18px;
+  left: 0;
   top: 50%;
   transform:  translateY(-50%) rotate(45deg);
-  background-color: #fff;
+  background-color: #fff; */
+  left: -20px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  background-image: url('/assets/icons/cross.svg');
+  z-index: 5;
 }
 
 .checkmark::after {
