@@ -20,8 +20,6 @@ export default function Home() {
         <Gallery/>
         <Contacts/>
         <ToastContainer autoClose={1000}/>
-
-
       </div>
     </main>
   );

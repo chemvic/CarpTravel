@@ -35,17 +35,17 @@ const Services = () => {
        <Swiper 
         effect={'fade'}
      
-        autoplay={{
-          delay: 10000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 10000,
+        //   disableOnInteraction: false,
+        // }}
         modules={[ Autoplay, EffectFade]}
         onSwiper={(s: any) => setSwiper(s)}
       >
-        {services.map(({num, title, img, slogan, description}
+        {services.map(({num, img, slogan, description}
 ) => (
           <SwiperSlide  key={img}>
-            <ServiceSlide num={num} servicesQuentity={servicesQuentity} title={title} img={img} slogan={slogan} description={description}  activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick} />
+            <ServiceSlide num={num} servicesQuentity={servicesQuentity} img={img} slogan={slogan} description={description}  activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick} />
           </SwiperSlide>
 
         ))}

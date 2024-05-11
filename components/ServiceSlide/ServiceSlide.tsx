@@ -4,7 +4,6 @@ import SliderNav from '../SliderNav/SliderNav';
 
 type ServiceSlideProps = {
     num: number;
-    title: string;
     servicesQuentity: number;
     img: string;
     slogan: string;
@@ -13,7 +12,7 @@ type ServiceSlideProps = {
     handleMenuButtonClick: (slideIndex: number) => void;
 }
 
-const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, servicesQuentity, description, slogan, img, activeSlide, handleMenuButtonClick }) => {
+const ServiceSlide:React.FC<ServiceSlideProps> = ({num, servicesQuentity, description, slogan, img, activeSlide, handleMenuButtonClick }) => {
   return (
     <div className={`section bg-overlay service-${img}`} >
         <div className="container">
@@ -25,22 +24,23 @@ const ServiceSlide:React.FC<ServiceSlideProps> = ({num, title, servicesQuentity,
                         <span className="text-white/20">0{servicesQuentity}</span>
                     </p>
                 </div>
-                <div className="flex flex-col gap-[12px] md:flex-row md:gap-[20px] ">
-                <Image
+                <div className="flex flex-col gap-[12px] md:flex-row justify-between md:gap-[20px] ">
+                  <div className=' w-full h-[213px] md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px] '>
+                      <Image
                     width={1214}
                     height={858}
                     alt={img}
                     src={`/assets/images/images/services/service-0${num}-${img}@2x.jpg`}
                     placeholder="blur"
                     blurDataURL={`/assets/images/images/services/service-0${num}-${img}.jpg`}
-                    sizes="(min-width: 1280px) 607px, (min-width: 768px) 463px, (min-width: 360px) 280px,  100vw"
-                />
-                <div className="flex flex-col justify-between">
+                    className="object-cover w-full h-full"
+                      />  
+                  </div>
+                
+                <div className="flex flex-col h-[350px] md:h-[370px] md:w-[221px] xl:w-[605px] xl:h-[429px] justify-between">
                     <div className="flex flex-col gap-[24px] md:flex-col-reverse md:gap-[25px] xl:flex-row-reverse ">
                         <p className="block label-form text-right md:text-left xl:w-[293px]">{slogan}</p>
-
-                        <SliderNav activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick}/>
-                       
+                        <SliderNav activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick}/>                       
                     </div>
                     <p className="block text-[14px] font-extralight leading-[1.428]  md:text-[13px] md:leading-[1.538] md: text-justify xl:text-[18px] xl:leading-[1.333] xl:w-[293px]  xl:self-end">{description}</p>
                 </div>
