@@ -35,10 +35,10 @@ const Services = () => {
        <Swiper 
         effect={'fade'}
      
-        // autoplay={{
-        //   delay: 10000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
         modules={[ Autoplay, EffectFade]}
         onSwiper={(s: any) => setSwiper(s)}
       >

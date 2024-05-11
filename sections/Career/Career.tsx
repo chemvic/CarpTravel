@@ -27,7 +27,7 @@ const Career = () => {
                            <p  className="text-[14px] font-regular tracking-normal leading-[1.429] md:text-[16px] md:leading-[1.25] xl:w-[297px] xl:text-[18px] xl:leading-[1.333] ">Stimulating work environment</p>
                            <p className="text-[12px] font-extralight leading-[1.667]  xl:leading-[2] xl:w-[285px] xl:text-left ">Flexibility and remote options for a comfortable experience.</p> 
                         </li>
-                        <li className="flex rotate-180 flex-col gap-[8px] text-right xl:flex-row xl:justify-between ">
+                        <li className="flex flex-col gap-[8px] text-right xl:flex-row xl:justify-between ">
                             <p  className="text-[14px] font-regular tracking-normal leading-[1.429] md:text-[16px] md:leading-[1.25] xl:w-[297px] xl:text-[18px] xl:leading-[1.333] ">Exciting challenges</p>
                             <p className="text-[12px] font-extralight leading-[1.667]  xl:leading-[2] xl:w-[285px] xl:text-left ">Unleash your potential through unforgettable projects showcasing Carpathian beauty.</p>
                         </li>
