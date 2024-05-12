@@ -1,6 +1,7 @@
 'use client';
 
-import {useEffect} from 'react';
+import { useEffect } from 'react';
+
 import PageNav from '../PageNav/PageNav';
 
 type MobileMenuProps = {

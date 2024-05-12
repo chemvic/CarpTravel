@@ -1,5 +1,7 @@
 'use client';
+
 import { Link } from 'react-scroll';
+
 type NavLinkProps = {
     link: string;
     text: string;
@@ -8,7 +10,7 @@ type NavLinkProps = {
   
 const NavLink: React.FC<NavLinkProps> = ({link , text, closeMenu}) => {
   return (
-    <div >
+    
     <Link
                    className='social relative inline-block cursor-pointer  capitalize tracking-[1.4px] font-inter text-white text-[18px] md:text-[14px]'
                    to={link}
@@ -19,7 +21,7 @@ const NavLink: React.FC<NavLinkProps> = ({link , text, closeMenu}) => {
                   >
                    {text}
     </Link>
-   </div>  )
+ )
 }
 
 export default NavLink
