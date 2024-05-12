@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
-import "./globals.css";
-import { Header } from "@/components/Header/Header";
-
+import './globals.css';
+import { Header } from '@/components/Header/Header';
 
 export const metadata: Metadata = {
-  title: "CarpTravel",
-  description: "Service for organizing travel in the Carpathians",
-  keywords: ["carpatians", "mountains", "rafting", "ballooning", "climbing"],
+  title: 'CarpTravel',
+  description: 'Service for organizing travel in the Carpathians',
+  keywords: ['carpatians', 'mountains', 'rafting', 'ballooning', 'climbing'],
   metadataBase: new URL('https://carp-travel-beryl.vercel.app/'),
   icons: [
     {
@@ -32,7 +31,6 @@ export const metadata: Metadata = {
     siteName: 'Uncover Carpathian’s Secrets',
     images: [{ url: '/ogp/carpatians.jpg' }, { url: '/ogp/carpatians.png' }],
   },
-
 };
 
 export default function RootLayout({
@@ -42,9 +40,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body className="text-white relative body">
-        <Header/>
+        <Header />
         {children}
       </body>
     </html>

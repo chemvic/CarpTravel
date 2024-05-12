@@ -9,9 +9,6 @@ import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import ServiceSlide from '@/components/ServiceSlide/ServiceSlide';
 import services from '../../data/services.json';
 
-
-
-
 const Services = () => {
   const [swiper, setSwiper] = useState<any>(null);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -31,28 +28,32 @@ const Services = () => {
   };
   const servicesQuentity = services?.length;
   return (
-    <section id='services' className='relative   bg-overlay'>
-       <Swiper 
+    <section id="services" className="relative   bg-overlay">
+      <Swiper
         effect={'fade'}
-     
         autoplay={{
           delay: 10000,
           disableOnInteraction: false,
         }}
-        modules={[ Autoplay, EffectFade]}
+        modules={[Autoplay, EffectFade]}
         onSwiper={(s: any) => setSwiper(s)}
       >
-        {services.map(({num, img, slogan, description}
-) => (
-          <SwiperSlide  key={img}>
-            <ServiceSlide num={num} servicesQuentity={servicesQuentity} img={img} slogan={slogan} description={description}  activeSlide={activeSlide} handleMenuButtonClick={handleMenuButtonClick} />
+        {services.map(({ num, img, slogan, description }) => (
+          <SwiperSlide key={img}>
+            <ServiceSlide
+              num={num}
+              servicesQuentity={servicesQuentity}
+              img={img}
+              slogan={slogan}
+              description={description}
+              activeSlide={activeSlide}
+              handleMenuButtonClick={handleMenuButtonClick}
+            />
           </SwiperSlide>
-
         ))}
-      
       </Swiper>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
